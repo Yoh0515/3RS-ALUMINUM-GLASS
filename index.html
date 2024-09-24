@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three R's Glass and Aluminum Installation Services</title>
+    <link rel="icon" type="image/x-icon" href="./img/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">
+            <img src="./img/logo.png" alt="">
+            Three R's Glass and Aluminum Installation Services
+        </a>
+        <ul class="nav-menu">
+            <li><a data-url="home.html" class="nav_link" data-title="Home">Home</a></li>
+            <li><a data-url="about.html" class="nav_link" data-title="About">About</a></li>
+            <li><a data-url="project.html" class="nav_link" data-title="Project">Project</a></li>
+            <li><a data-url="contact.html" class="nav_link" data-title="Contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <main>
+        <div id="content-area"></div>
+    </main>
+    <script>
+        // Function to load content
+        function loadContent(url) {
+            const contentArea = document.getElementById('content-area');
+            fetch(url)
+                .then(response => response.text())
+                .then(html => {
+                    contentArea.innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error loading page:', error);
+                    contentArea.innerHTML = '<p>Error loading content. Please try again later.</p>';
+                });
+        }
+
+        // Function to set the active class on the clicked link
+        function setActiveLink(link) {
+            document.querySelectorAll('.nav_link').forEach(link => link.classList.remove('active'));
+            link.classList.add('active');
+        }
+
+        // Load home.html on page load and set "Home" link as active
+        document.addEventListener('DOMContentLoaded', function () {
+            const homeLink = document.querySelector('.nav_link[data-url="home.html"]');
+            loadContent('home.html');
+            setActiveLink(homeLink);
+        });
+
+        // Add event listeners to navigation links
+        document.querySelectorAll('.nav_link').forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Load the selected page content
+                const url = this.getAttribute('data-url');
+                loadContent(url);
+
+                // Set the clicked link as active
+                setActiveLink(this);
+            });
+        });
+    </script>
+</body>
+</html>

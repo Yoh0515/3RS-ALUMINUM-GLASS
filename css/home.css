@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* body::-webkit-scrollbar, 
+body::-webkit-scrollbar-button { 
+    display: none; 
+} */
+
+#myVideo {
+    min-width: 100%;
+    min-height: 500px;
+}
+
+.content {
+    right: 0;
+    bottom: 0;
+    top: 100px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+}
+
+.project {
+    height: 100vh;
+    background-color: red;
+}
+  
+ 
