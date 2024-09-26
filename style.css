@@ -11,7 +11,7 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 15vh;
   background-color: whitesmoke;
   font-size: 20px;
@@ -44,11 +44,18 @@ ul {
   justify-content: space-evenly;
 }
 
-ul li a:hover {
-  cursor: pointer;
+ul li a::after {
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: #CC0101;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
 }
 
-main {
+ul li a::hover::after {
+  width: 100%;
 }
 
 iframe {
@@ -89,9 +96,14 @@ iframe {
 }
 
 .active {
-  text-decoration: underline;
-  text-underline-offset: 10px;
   font-weight: 400;
   color: rgb(231, 90, 90);
 }
 
+@media (max-width: 480px) {
+  body {
+    nav a {
+      display: none;
+    }
+  }
+}
