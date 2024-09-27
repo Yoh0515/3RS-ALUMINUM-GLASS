@@ -3,14 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4a73983de5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <section id="header">
+        <nav>
+            <a href="#"><img src="./img/icon.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Project</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+            <h1>Three R's Glass and Aluminum Installation Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit cumque possimus at quidem <br>voluptates vel, distinctio non accusantium perspiciatis nostrum veniam? Rem, consectetur. Harum in esse odio, omnis corrupti dignissimos!</p>
+        </div>
+    </section>
+
+    <section id="project">
+        <h1>Our Projects</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, repudiandae!</p>
+        <div class="row">
+            <div class="project-col">
+                <img src="./img/11.png">
+                <div class="layer">
+                    <h3>Awning Window</h3>
+                </div>
+            </div>
+            <div class="project-col">
+                <img src="./img/11.png">
+                <div class="layer">
+                    <h3>Sliding Door</h3>
+                </div>
+            </div>
+            <div class="project-col">
+                <img src="./img/11.png">
+                <div class="layer">
+                    <h3>Sliding Window</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let navLinks = document.getElementById('navLinks');
+
+        function showMenu (){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu (){
+            navLinks.style.right = "-600px";
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Three R's Glass and Aluminum Installation Services</title>
     <link rel="icon" type="image/x-icon" href="./img/icon.png">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4a73983de5.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <a class="logo" href="index.html">
-            <img src="./img/logo.png" alt=""></a>
+        <a class="logo" href="index.html"><img src="./img/logo.png" alt=""></a>
+        <i class="fa-solid fa-bars"></i>
         <ul class="nav-menu">
             <li><a data-url="home.html" class="nav_link" data-title="Home">Home</a></li>
             <li><a data-url="about.html" class="nav_link" data-title="About">About</a></li>
@@ -69,4 +145,4 @@
         });
     </script>
 </body>
-</html>
+</html> -->
