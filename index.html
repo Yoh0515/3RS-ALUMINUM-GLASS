@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,37 +9,37 @@
     <title>3R'S ALUMINUM GLASS</title>
     <style>
         .bg-overlay {
-            background-image: linear-gradient(rgba(16, 16, 17, 0.7), rgba(29, 31, 37, 0.7)), url('/img/11.png');
+            background-image: linear-gradient(rgb(70, 70, 70), rgba(29, 31, 37, 0.7)), url('/img/11.png');
         }
     </style>
 </head>
 <body class="m-0 p-0">
   <header id="home" class="bg-cover bg-overlay bg-no-repeat">
-    <div class="fixed w-full">
-      <div class="flex items-center shadow justify-between gap-y-4 px-[50px] py-[10px] bg-gray-400/5 backdrop-blur-md">
-        <a href=""><img class="h-[50px] w-[50px]" src="./img/logo.png" alt="logo"></a>
+    <div class="fixed w-full z-50">
+      <div class="flex items-center shadow justify-between gap-y-4 px-[50px] py-[7px] bg-[#786d72]/45 backdrop-blur-md lg:justify-around">
+        <a href=""><img class="h-[70px] w-[70px]" src="./img/logo.png" alt="logo"></a>
 
         <!-- Hamburger and close icons controlled by checkbox -->
         <input type="checkbox" id="menu-toggle" class="hidden peer">
         <label for="menu-toggle" class="block lg:hidden cursor-pointer">
-          <i class="fa-solid fa-bars menu_bar text-[#fa1900]" id="menu_bar"></i>
-          <i class="fa-solid fa-xmark text-[#fa1900] hidden peer-checked:block"></i>
+          <i class="fa-solid fa-bars menu_bar text-[#ff0038]" id="menu_bar"></i>
+          <i class="fa-solid fa-xmark text-[#ff0038] hidden peer-checked:block"></i>
         </label>
 
         <!-- Navigation menu -->
         <nav class="flex items-center absolute top-[70px] lg:relative right-0 lg:top-[0px] bg-neutral-400 lg:bg-transparent w-full lg:w-auto text-center p-4 lg:p-0 hidden peer-checked:flex lg:flex">
           <ul id="navLinks" class="space-y-8 lg:space-x-8 lg:space-y-0 text-white lg:flex lg:items-center w-full lg:w-auto">
             <a href="#home" class="nav-link block" onclick="closeMenu()">
-              <li class="hover:text-[#fa1900] cursor-pointer">Home</li>
+              <li class="hover:text-[#ff0038] cursor-pointer text-[18px]">Home</li>
             </a>
             <a href="#about" class="nav-link block" onclick="closeMenu()">
-              <li class="hover:text-[#fa1900] cursor-pointer">About Us</li>
+              <li class="hover:text-[#ff0038] cursor-pointer text-[18px]">About Us</li>
             </a>
             <a href="#project" class="nav-link block" onclick="closeMenu()">
-              <li class="hover:text-[#fa1900] cursor-pointer">Project</li>
+              <li class="hover:text-[#ff0038] cursor-pointer text-[18px]">Project</li>
             </a>
             <a href="#contact" class="nav-link block" onclick="closeMenu()">
-              <li class="hover:text-[#fa1900] cursor-pointer">Contact</li>
+              <li class="hover:text-[#ff0038] cursor-pointer text-[18px]">Contact</li>
             </a>
           </ul>
         </nav>
@@ -47,29 +47,57 @@
     </div>
 
     <!-- Hero Section -->
-    <div class="flex items-center justify-center flex-col h-[600px]">
-      <h1 class="text-[#fa1900] text-5xl">ThreeRs Glass Aluminum Installation Services</h1>
-      <p class="px-[100px] text-white text-lg pt-[40px] text-center ">
-        We make a variety of series for windows and doors works, including 798 series, 900 series, 38 series, 50 series,
-        and SD series, and we guarantee you will receive top-quality service based on our more than 30 years of experience
-        in this field.
+    <div class="flex items-center justify-center flex-col h-[800px]">
+      <h1 class="text-[#fa1900] px-[20px] lg:text-5xl text-[35px] md:w-[600px] lg:w-[900px] font-medium text-center">Three R's Glass Aluminum Installation Services</h1>
+      <p class="px-[40px] lg:px-[100px] text-white text-lg pt-[40px] md:w-[600px] lg:w-[900px] text-center ">
+        We make a variety of series for windows and doors works, including 798 series, 900 series, 38 series, 50 series, and SD series, and we guarantee you will receive top-quality service based on our more than 30 years of experience in this field.
       </p>
+      <a class="mt-[30px] p-[10px] bg-[#fa1900] text-slate-100 text-[20px] hover:rounded-tl-lg hover:rounded-br-lg" href="#contact">Get Quoted</a>
     </div>
   </header>
 
   <!-- About Section -->
-  <section id="about" class="h-screen bg-gray-900">
-      About Us
+  <section id="about" class="h-screen border-red-300 bg-gray-200 border-b">
+      <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
+        About Us
+      </h1>
   </section>
 
   <!-- Services Section -->
-  <section id="project" class="h-screen bg-gray-100 pt-20">
-      Services
+  <section id="project" class="border-red-300 bg-gray-200 border-b">
+    <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
+      Project
+    </h1>
+    <div class="flex justify-center items-center flex-wrap">
+      <div class="rounded-xl overflow-hidden mx-[15px] mt-[60px] relative group">
+        <img src="./img/p-2.jpg" class="h-[500px] w-[400px] transition-transform duration-300 group-hover:scale-110 z-10">
+        <div class="absolute inset-0 bg-red-500/35 flex items-stretch pt-[400px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+          <h1 class="text-slate-100 font-bold opacity-100  text-[35px] animate-bounce z-50">Sliding Door</h1>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden mx-[15px] mt-[60px] relative group">
+        <img src="./img/p-3.jpg" class="h-[500px] w-[400px] transition-transform duration-300 group-hover:scale-110 z-10">
+        <div class="absolute inset-0 bg-red-500/35 flex items-stretch pt-[400px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+          <h1 class="text-slate-100 font-bold opacity-100  text-[35px] animate-bounce z-50">Sliding Window</h1>
+        </div>
+      </div>
+      <div class="rounded-xl overflow-hidden mx-[15px] mt-[60px] relative group">
+        <img src="./img/p-4.jpg" class="h-[500px] w-[400px] transition-transform duration-300 group-hover:scale-110 z-10">
+        <div class="absolute inset-0 bg-red-500/35 flex items-stretch pt-[400px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+          <h1 class="text-slate-100 font-bold opacity-100  text-[35px] animate-bounce z-50">Awning Window</h1>
+        </div>
+      </div>
+    </div>
+    <div class="mt-[50px] flex items-center justify-center">
+      <a href="project.html" target="_blank" rel="noopener noreferrer" class="px-[10px] py-[10px] bg-[#fa1900] text-slate-100 text-[20px] hover:shadow-2xl shadow-[#000] hover:rounded-tl-lg hover:rounded-br-lg mb-[40px]">View More</a>
+    </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="h-screen bg-blue-600 pt-20">
+  <section id="contact" class="h-screen border-red-300 bg-gray-200 border-b">
+    <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
       Contact
+    </h1>
   </section>
 
   <script>
