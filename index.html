@@ -35,6 +35,9 @@
             <a href="#about" class="nav-link block" onclick="closeMenu()">
               <li class="hover:text-[#ff0038] cursor-pointer text-[18px]">About Us</li>
             </a>
+            <a href="#serve" class="nav-link block" onclick="closeMenu()">
+              <li class="hover:text-[#ff0038] cursor-pointer text-[18px]">Services</li>
+            </a>
             <a href="#project" class="nav-link block" onclick="closeMenu()">
               <li class="hover:text-[#ff0038] cursor-pointer text-[18px]">Project</li>
             </a>
@@ -63,33 +66,59 @@
       </h1>
   </section>
 
-  <!-- Services Section -->
+  <!-- About Services -->
+  <section id="serve" class="h-screen border-red-300 bg-gray-200 border-b flex flex-col justify-start items-center">
+      <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
+        Explore Our Services
+      </h1>
+      <div class="bg-red-500 shadow-[-16px_18px_22px_9px_#ff7373] rounded-br-lg rounded-tl-lg text-white w-[750px] py-[30px] mt-[40px]">
+        <h3 class="text-center text-[20px] pb-[30px]">We offer high-quality installations for:</h3>
+        <div class="flex items-center justify-center justify-around flex-wrap">
+          <ul class = "pl-[20px]">
+            <li class="leading-loose">Sliding Window</li>
+            <li class="leading-loose">Sliding Door</li>
+            <li class="leading-loose">Screen Door and Window </li>
+            <li class="leading-loose">Frameless Door</li>
+            <li class="leading-loose">Coated Aluminum for Window and Door Works</li>
+          </ul>
+          <ul class = "pr-[20px]">
+            <li class="leading-loose">Awning Window</li>
+            <li class="leading-loose">Mirror / Glass</li>
+            <li class="leading-loose">Seemless Glass Works</li>
+            <li class="leading-loose">Accesories for Glass and Aluminum Supplies</li>
+            <li class="leading-loose">Patch Fitting</li>
+          </ul>
+        </div>
+      </div>
+  </section>
+
+  <!-- Project Section -->
   <section id="project" class="border-red-300 bg-gray-200 border-b">
     <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
       Project
     </h1>
     <div class="flex justify-center p-0 flex-wrap">
       <div class="rounded-xl overflow-hidden mx-[15px] mt-[20px] relative group">
-        <img src="./img/p-2.jpg" class="h-[400px] w-[250px] transition-transform duration-300 group-hover:scale-110 z-10">
+        <img src="./img/p-2.jpg" class="h-[400px] w-[300px] transition-transform duration-300 group-hover:scale-110 z-10">
         <div class="absolute inset-0 bg-red-500/35 flex items-stretch pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <h1 class="text-slate-100 font-bold opacity-100  text-[25px] animate-bounce z-50">Sliding Door</h1>
         </div>
       </div>
       <div class="rounded-xl overflow-hidden mx-[15px] mt-[20px] relative group">
-        <img src="./img/p-3.jpg" class="h-[400px] w-[250px] transition-transform duration-300 group-hover:scale-110 z-10">
+        <img src="./img/p-3.jpg" class="h-[400px] w-[300px] transition-transform duration-300 group-hover:scale-110 z-10">
         <div class="absolute inset-0 bg-red-500/35 flex items-stretch pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <h1 class="text-slate-100 font-bold opacity-100  text-[25px] animate-bounce z-50">Sliding Window</h1>
         </div>
       </div>
       <div class="rounded-xl overflow-hidden mx-[15px] mt-[20px] relative group">
-        <img src="./img/p-4.jpg" class="h-[400px] w-[250px] transition-transform duration-300 group-hover:scale-110 z-10">
+        <img src="./img/p-4.jpg" class="h-[400px] w-[300px] transition-transform duration-300 group-hover:scale-110 z-10">
         <div class="absolute inset-0 bg-red-500/35 flex items-stretch pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <h1 class="text-slate-100 font-bold opacity-100  text-[25px] animate-bounce z-50">Awning Window</h1>
         </div>
       </div>
     </div>
     <div class="mt-[30px] flex items-center justify-center">
-      <a href="project.html" target="_blank" rel="noopener noreferrer" class="px-[10px] py-[8px] bg-[#fa1900] text-slate-100 text-[18px] hover:shadow-2xl shadow-[#000] hover:rounded-tl-lg hover:rounded-br-lg mb-[40px]">View More</a>
+      <a href="project.html" target="_blank" rel="noopener noreferrer" class="px-[10px] py-[5px] bg-[#fa1900] text-slate-100 text-[18px] hover:shadow-2xl shadow-[#000] hover:rounded-tl-lg hover:rounded-br-lg mb-[40px]">View More</a>
     </div>
   </section>
 
@@ -99,6 +128,10 @@
       Contact
     </h1>
   </section>
+
+  <footer class="flex flex-col items-center justify-center">
+    <p class=" lowercase">Copy @2024 3R'S GLASS ALUMINUM SERVICES AND INSTALLATION</p>
+  </footer>
 
   <script>
     // Function to close the mobile menu by unchecking the checkbox
