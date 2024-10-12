@@ -27,7 +27,7 @@
         </label>
 
         <!-- Navigation menu -->
-        <nav class="flex items-center absolute top-[70px] lg:relative right-0 lg:top-[0px] bg-neutral-400 lg:bg-transparent w-full lg:w-auto text-center p-4 lg:p-0 hidden peer-checked:flex lg:flex">
+        <nav class=" items-center absolute top-[70px] lg:relative right-0 lg:top-[0px] bg-neutral-400 lg:bg-transparent w-full lg:w-auto text-center p-4 lg:p-0 hidden peer-checked:flex lg:flex">
           <ul id="navLinks" class="space-y-8 lg:space-x-8 lg:space-y-0 text-white lg:flex lg:items-center w-full lg:w-auto">
             <a href="#home" class="nav-link block" onclick="closeMenu()">
               <li class="hover:text-[#ff0038] cursor-pointer text-[18px]">Home</li>
@@ -60,60 +60,63 @@
   </header>
 
   <!-- About Section -->
-  <section id="about" class="h-screen border-red-300 bg-gray-200 border-b">
+  <section id="about" class="h-screen border-gray-300 bg-gradient-to-b from-rose-100 from-0% via-white to-white border-t">
       <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
         About Us
       </h1>
   </section>
 
   <!-- About Services -->
-  <section id="serve" class="h-screen border-red-300 bg-gray-200 border-b flex flex-col justify-start items-center">
+  <section id="serve" class="border-gray-300 border-t flex flex-col justify-start items-center" >
       <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
         Explore Our Services
       </h1>
-      <div class="bg-red-500 shadow-[-16px_18px_22px_9px_#ff7373] rounded-br-lg rounded-tl-lg text-white w-[750px] py-[30px] mt-[40px]">
-        <h3 class="text-center text-[20px] pb-[30px]">We offer high-quality installations for:</h3>
-        <div class="flex items-center justify-center justify-around flex-wrap">
-          <ul class = "pl-[20px]">
-            <li class="leading-loose">Sliding Window</li>
-            <li class="leading-loose">Sliding Door</li>
-            <li class="leading-loose">Screen Door and Window </li>
-            <li class="leading-loose">Frameless Door</li>
-            <li class="leading-loose">Coated Aluminum for Window and Door Works</li>
+      <div class="shadow-[0px_2px_17px_5px_rgba(90,10,10,0.09)] w-[390px] 2xl:w-[1300px] xl:w-[1200px] lg:w-[900px] md:w-[600px]  mx-10 rounded text-black py-[20px] px-[15px] mt-[60px] mb-[100px]">
+        <h3 class="px-[15px] lg:text-start md:text-start text-wrap text-[21px]">We take pride in the quality of our work and the reliability of our service. We specialize in the following glass and aluminum supply, customization and installation:</h3>
+        <div class="flex items-center xl:justify-around flex-wrap mt-5 lg:mt-10">
+          <ul class = "lg:pl-[20px] text-[20px] px-[15px]">
+            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Sliding Window</li>
+            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Sliding Door</li>
+            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Screen Door and Window </li>
+            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Frameless Door</li>
+            <li class="leading-loose flex hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pt-[14px] pr-[7px]"></i>Coated Aluminum for Window and Door Works</li>
           </ul>
-          <ul class = "pr-[20px]">
-            <li class="leading-loose">Awning Window</li>
-            <li class="leading-loose">Mirror / Glass</li>
-            <li class="leading-loose">Seemless Glass Works</li>
-            <li class="leading-loose">Accesories for Glass and Aluminum Supplies</li>
-            <li class="leading-loose">Patch Fitting</li>
+          <ul class = "lg:pl-[20px] text-[20px] px-[15px]">
+            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Awning Window</li>
+            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Mirror / Glass</li>
+            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Seemless Glass Works</li>
+            <li class="leading-loose flex hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pt-[14px] pr-[7px]"></i>Accesories for Glass and Aluminum Supplies</li>
+            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Patch Fitting</li>
           </ul>
         </div>
       </div>
   </section>
 
   <!-- Project Section -->
-  <section id="project" class="border-red-300 bg-gray-200 border-b">
+  <section id="project" class="border-gray-300 bg-white border-t">
     <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
       Project
     </h1>
     <div class="flex justify-center p-0 flex-wrap">
       <div class="rounded-xl overflow-hidden mx-[15px] mt-[20px] relative group shadow-[0px_8px_46px_-3px_rgba(146,139,139,0.6)]">
         <img src="./img/p-2.jpg" class="h-[400px] w-[300px] transition-transform duration-300 group-hover:scale-110 z-10">
-        <div class="absolute inset-0 bg-red-500/35 flex items-stretch pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+        <div class="absolute inset-0 bg-red-500/35 flex flex-col items-center pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <h1 class="text-slate-100 font-bold opacity-100  text-[25px] animate-bounce z-50">Sliding Door</h1>
+          <a href="s_door.html" class="justify-center"><button class="text-white rounded-br-lg rounded-tl-lg text-[12px] px-[20px] py-[5px] mb-[12px] mt-[5px] bg-[#ff0038]">View</button></a>
         </div>
       </div>
       <div class="rounded-xl overflow-hidden mx-[25px] mt-[20px] relative group shadow-[0px_8px_46px_-3px_rgba(146,139,139,0.6)]">
         <img src="./img/p-3.jpg" class="h-[400px] w-[300px] transition-transform duration-300 group-hover:scale-110 z-10">
-        <div class="absolute inset-0 bg-red-500/35 flex items-stretch pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+        <div class="absolute inset-0 bg-red-500/35 flex flex-col items-center pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <h1 class="text-slate-100 font-bold opacity-100  text-[25px] animate-bounce z-50">Sliding Window</h1>
+          <a href="s_window.html" class="justify-center"><button class="text-white rounded-br-lg rounded-tl-lg text-[12px] px-[20px] py-[5px] mb-[12px] mt-[5px] bg-[#ff0038]">View</button></a>
         </div>
       </div>
       <div class="rounded-xl overflow-hidden mx-[15px] mt-[20px] relative group shadow-[0px_8px_46px_-3px_rgba(146,139,139,0.6)]">
         <img src="./img/p-4.jpg" class="h-[400px] w-[300px] transition-transform duration-300 group-hover:scale-110 z-10">
-        <div class="absolute inset-0 bg-red-500/35 flex items-stretch pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+        <div class="absolute inset-0 bg-red-500/35 flex flex-col items-center pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <h1 class="text-slate-100 font-bold opacity-100  text-[25px] animate-bounce z-50">Awning Window</h1>
+          <a href="a_window.html" class="justify-center"><button class="text-white rounded-br-lg rounded-tl-lg text-[12px] px-[20px] py-[5px] mb-[12px] mt-[5px] bg-[#ff0038]">View</button></a>
         </div>
       </div>
     </div>
@@ -123,14 +126,14 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="h-screen border-red-300 bg-gray-200 border-b">
+  <section id="contact" class="h-screen border-gray-300  border-t">
     <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
       Contact
     </h1>
   </section>
 
-  <footer class="flex flex-col items-center justify-center">
-    <p class="">Copy @2024 3R'S Glass Aluminum Services and Installation</p>
+  <footer class="flex flex-col items-center text-[16px] text-white p-4 bg-[#ff0038] justify-center">
+    <p class="">@2024 3R'S Glass Aluminum Services and Installation | Website by <span><a href="http://" target="_blank" rel="noopener noreferrer">Yoh</a></span></p>
   </footer>
 
   <script>
