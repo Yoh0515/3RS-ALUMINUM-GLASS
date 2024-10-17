@@ -13,7 +13,7 @@
             background-image: linear-gradient(rgb(70, 70, 70), rgba(29, 31, 37, 0.7)), url('img/11.png');
         }
     </style>
-</head>
+</head> 
 <body class="m-0 p-0">
   <header id="home" class="bg-cover bg-overlay bg-no-repeat">
     <div class="fixed w-full z-50">
@@ -23,8 +23,7 @@
         <!-- Hamburger and close icons controlled by checkbox -->
         <input type="checkbox" id="menu-toggle" class="hidden peer">
         <label for="menu-toggle" class="block lg:hidden cursor-pointer">
-          <i class="fa-solid fa-bars menu_bar text-[#ff0038]" id="menu_bar"></i>
-          <i class="fa-solid fa-xmark text-[#ff0038] hidden peer-checked:block"></i>
+          <i class="fa-solid fa-bars menu_bar text-[#ff0038] text-[14px]" id="menu_bar"></i>
         </label>
 
         <!-- Navigation menu -->
@@ -72,7 +71,7 @@
       <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
         Explore Our Services
       </h1>
-      <div class="shadow-[0px_2px_17px_5px_rgba(90,10,10,0.09)] w-[390px] 2xl:w-[1300px] xl:w-[1200px] lg:w-[900px] md:w-[600px]  mx-10 rounded text-black py-[20px] px-[15px] mt-[60px] mb-[100px]">
+      <div class="shadow-[0px_0px_6px_1px_rgba(0,_0,_0,_0.1)] w-[390px] 2xl:w-[1300px] xl:w-[1200px] lg:w-[900px] md:w-[600px]  mx-10 rounded text-black py-[20px] px-[15px] mt-[60px] mb-[100px]">
         <h3 class="px-[15px] lg:text-start md:text-start text-wrap text-[21px]">We take pride in the quality of our work and the reliability of our service. We specialize in the following glass and aluminum supply, customization and installation:</h3>
         <div class="flex items-center xl:justify-around flex-wrap mt-5 lg:mt-10">
           <ul class = "lg:pl-[20px] text-[20px] px-[15px]">
@@ -127,46 +126,92 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="h-screen border-gray-300  border-t">
+  <section id="contact" class=" border-gray-300  border-t">
     <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
       Get in touch
-    </h1>
-    <div class="p-10">
-      <form action="#" method="POST" class="space-y-4">
-        <!-- Name -->
-         <div class="grid grid-cols-2 space-x-3">
+      </h1>
+      <p class="dark:text-gray-600 text-center pt-[10px] px-[50px]">For aluminum quote prices, please reach out using the contact form below. We’ll respond promptly with a tailored quote. Thank you!</p>
+    <div class="flex flex-wrap justify-center gap-[40px] mt-[20px]">
+      <div class="flex justify-center p-0">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7728.93610561487!2d120.99211896359897!3d14.400161004894716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d14a817e7fed%3A0x28113ce4e3c09645!2sThree%20R&#39;s%20Glass%20and%20Aluminum%20Installation%20Services!5e0!3m2!1sen!2sph!4v1729131612048!5m2!1sen!2sph" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="lg:w-[500px] rounded-md"></iframe>
+      </div>
+      <div class="px-8 py-5 border shadow-[0px_0px_6px_1px_rgba(0,_0,_0,_0.1)] rounded max-w[550px] min-w-[350px]">
+        <form action="#" method="POST" class="space-y-4">
+          <!-- Name -->
+           <div class="grid lg:grid-cols-2 lg:space-x-3">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700">First Name</label>
+              <input type="text" name="name" id="name" required
+              placeholder="Enter your name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]">
+            </div>
+            <div class="mt-[16px] lg:mt-0">
+              <label for="lastname" class="block text-sm font-medium text-gray-700">Last Name</label>
+              <input type="text" name="lastname" id="lastname" required
+              placeholder="Enter your name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]">
+            </div>
+           </div>
+          <!-- Email -->
           <div>
-            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-            <input type="text" name="name" id="name" required
-            placeholder="Enter your name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]">
+            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" name="email" id="email" required
+            placeholder="Enter your email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]">
           </div>
+    
+          <!-- Message -->
           <div>
-            <label for="lastname" class="block text-sm font-medium text-gray-700">Last Name</label>
-            <input type="text" name="lastname" id="lastname" required
-            placeholder="Enter your name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]">
+            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+            <textarea name="message" id="message" rows="5" required
+            placeholder="Enter your message" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]"></textarea>
           </div>
-         </div>
-        <!-- Email -->
-        <div>
-          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-          <input type="email" name="email" id="email" required
-          placeholder="Enter your email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]">
+    
+          <!-- Submit Button -->
+          <div class="text-center">
+            <button type="submit" class="px-6 py-2 bg-[#fa1900] text-white rounded-lg hover:bg-red-600 focus:ring-4 focus:ring-[#fa1900]/50 transition ease-in-out duration-300">
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="flex justify-center flex-wrap mt-[40px] mb-[20px] space-y-3 lg:space-x-3 lg:space-y-0">
+      <div class="w-[350px] rounded-xl shadow-[0px_0px_6px_1px_rgba(0,_0,_0,_0.1)] p-0">
+        <div class="border-b bg-[#febab3] p-2 rounded-t-xl shadow-[0px_0px_6px_1px_rgba(0,_0,_0,_0.1)]">
+          <i class="fa-solid fa-phone text-[#fa1900] text-[26px] text-center w-full"></i>
         </div>
-  
-        <!-- Message -->
-        <div>
-          <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-          <textarea name="message" id="message" rows="5" required
-          placeholder="Enter your message" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]"></textarea>
+        <div class="p-3 dark:text-gray-600">
+          <h1 class="text-[#fa1900] font-bold leading-tight">Phone</h1>
+          <p class="not-italic font-light text-[13px] pl-[20px]">09561649700</p>
         </div>
-  
-        <!-- Submit Button -->
-        <div class="text-center">
-          <button type="submit" class="px-6 py-2 bg-[#fa1900] text-white rounded-lg hover:bg-red-600 focus:ring-4 focus:ring-[#fa1900]/50 transition ease-in-out duration-300">
-            Send Message
-          </button>
+      </div>
+      <div class="w-[350px] rounded-xl shadow-[0px_0px_6px_1px_rgba(0,_0,_0,_0.1)] p-0">
+        <div class="border-b bg-[#febab3] p-2 rounded-t-xl shadow-[0px_0px_6px_1px_rgba(0,_0,_0,_0.1)]">
+          <i class="fa-solid fa-location-dot text-[#fa1900] text-[26px] text-center w-full"></i>
         </div>
-      </form>
+        <div class="p-3 dark:text-gray-600">
+          <h1 class="text-[#fa1900] font-bold leading-tight">Address</h1>
+          <p class="not-italic font-light text-[13px] pl-[20px]">Queen's Row Area S, B15 L 15, Queen's Ave, Bacoor, 4102 Cavite</p>
+        </div>
+      </div>
+      <div class="w-[350px] rounded-xl shadow-[0px_0px_6px_1px_rgba(0,_0,_0,_0.1)] p-0">
+        <div class="border-b bg-[#febab3] p-2 rounded-t-xl shadow-[0px_0px_6px_1px_rgba(0,_0,_0,_0.1)]">
+          <i class="fa-solid fa-envelope text-[#fa1900] text-[26px] text-center w-full"></i>
+        </div>
+        <div class="p-3 dark:text-gray-600">
+          <h1 class="text-[#fa1900] font-bold leading-tight">Email</h1>
+          <p class="not-italic font-light text-[13px] pl-[20px]">threers.aluminumglass@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center space-x-5 my-[40px]">
+      <div class="flex flex-col justify-center items-center gap-2 hover:cursor-pointer">
+        <a href="https://www.facebook.com/profile.php?id=100071350239993" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook text-[35px] mx-[20px] text-[#fa1900]"></i></a>
+        <h3 class="dark:text-gray-600 text-[12px]">Facebook</h3>
+      </div>
+
+      <div class="flex flex-col justify-center items-center gap-2 hover:cursor-pointer"> 
+        <a href="https://msng.link/o?09561649700=vi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-viber text-[35px] mx-[20px] text-[#fa1900]"></i></a>
+        <h3 class="dark:text-gray-600 text-[12px]">Viber</h3>
+      </div>
     </div>
   </section>
 
