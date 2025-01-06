@@ -280,6 +280,17 @@
       });
     });
 
+    function updateFooterYear() {
+      const currentYear = new Date().getFullYear();
+      const footerElement = document.querySelector("footer p"); 
+      if (footerElement) {
+        footerElement.innerHTML = `@${currentYear} 3R's Glass Aluminum Services and Installation | Website by <span><a href="https://rommelliad.netlify.app/" rel="noopener noreferrer" class="underline">YOH</a></span>`;
+      }
+    }
+    updateFooterYear();
+
+    document.addEventListener("DOMContentLoaded", updateFooterYear);
+
   </script>
 </body>
 </html>

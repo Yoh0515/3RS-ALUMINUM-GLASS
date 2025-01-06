@@ -1486,6 +1486,12 @@ video {
     font-size: 3rem;
     line-height: 1;
   }
+
+  a.underline {
+    text-decoration: underline;
+    text-decoration-thickness: 1px; 
+    text-underline-offset: 4px; 
+  }
 }
 
 @media (min-width: 1280px) {
