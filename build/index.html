@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <script src="https://kit.fontawesome.com/4a73983de5.js"></script>
-    <!-- <link rel="icon" type="image/x-icon" href="./img/3rs.png"> -->
-    <title>3R'S ALUMINUM GLASS</title>
-    <style>
-        .bg-overlay {
-            background-image: linear-gradient(rgb(70, 70, 70), rgba(29, 31, 37, 0.7)), url('img/11.png');
-        }
-        .bg-about {
-            background-image: linear-gradient(rgb(228, 218, 218), rgba(255, 255, 255, 0.7)), url('img/about_cover.jpg');
-        }
 
-    </style>
-</head> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://kit.fontawesome.com/4a73983de5.js"></script>
+  <link rel="icon" type="image/x-icon" href="./img/3rs.png">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script src="sweetalert2.min.js"></script>
+  <link rel="stylesheet" href="sweetalert2.min.css">
+  <title>3R'S ALUMINUM GLASS</title>
+  <style>
+    .bg-overlay {
+      background-image: linear-gradient(rgb(70, 70, 70), rgba(29, 31, 37, 0.7)), url('img/11.png');
+    }
+
+    .bg-about {
+      background-image: linear-gradient(rgb(228, 218, 218), rgba(255, 255, 255, 0.7)), url('img/about_cover.jpg');
+    }
+  </style>
+</head>
+
 <body class="m-0 p-0">
   <header id="home" class="bg-cover bg-no-repeat bg-overlay">
     <div class="fixed w-full z-50">
-      <div class="flex items-center shadow justify-between gap-y-4 px-[50px] py-[7px] bg-[#786d72]/45 backdrop-blur-md lg:justify-around">
+      <div
+        class="flex items-center shadow justify-between gap-y-4 px-[50px] py-[7px] bg-[#786d72]/45 backdrop-blur-md lg:justify-around">
         <a href=""><img class="h-[70px] w-[70px]" src="./img/logo.png" alt="logo"></a>
 
         <!-- Hamburger and close icons controlled by checkbox -->
@@ -31,8 +37,10 @@
         </label>
 
         <!-- Navigation menu -->
-        <nav class=" items-center absolute top-[70px] lg:relative right-0 lg:top-[0px] bg-neutral-400 lg:bg-transparent w-full lg:w-auto text-center p-4 lg:p-0 hidden peer-checked:flex lg:flex">
-          <ul id="navLinks" class="space-y-8 lg:space-x-8 lg:space-y-0 text-white lg:flex lg:items-center w-full lg:w-auto">
+        <nav
+          class=" items-center absolute top-[70px] lg:relative right-0 lg:top-[0px] bg-neutral-400 lg:bg-transparent w-full lg:w-auto text-center p-4 lg:p-0 hidden peer-checked:flex lg:flex">
+          <ul id="navLinks"
+            class="space-y-8 lg:space-x-8 lg:space-y-0 text-white lg:flex lg:items-center w-full lg:w-auto">
             <a href="#home" class="nav-link block" onclick="closeMenu()">
               <li class="hover:text-[#ff0038] cursor-pointer text-[18px]">Home</li>
             </a>
@@ -55,86 +63,118 @@
 
     <!-- Hero Section -->
     <div class="flex items-center justify-center flex-col h-[800px]">
-      <h1 class="text-[#fa1900] px-[20px] lg:text-5xl text-[35px] md:w-[600px] lg:w-[900px] font-medium text-center animate-zoomIn">Three R's Glass Aluminum Installation Services</h1>
-      <p class="px-[40px] lg:px-[100px] text-white text-lg pt-[40px] md:w-[600px] lg:w-[900px] text-center animate-slideDown">
-        We make a variety of series for windows and doors works, including 798 series, 900 series, 38 series, 50 series, and SD series, and we guarantee you will receive top-quality service based on our more than 30 years of experience in this fields.
+      <h1
+        class="text-[#fa1900] px-[20px] lg:text-5xl text-[35px] md:w-[600px] lg:w-[900px] font-medium text-center animate-zoomIn">
+        Three R's Glass Aluminum Installation Services</h1>
+      <p
+        class="px-[40px] lg:px-[100px] text-white text-lg pt-[40px] md:w-[600px] lg:w-[900px] text-center animate-slideDown">
+        We make a variety of series for windows and doors works, including 798 series, 900 series, 38 series, 50 series,
+        and SD series, and we guarantee you will receive top-quality service based on our more than 30 years of
+        experience in this fields.
       </p>
-      <a class="mt-[30px] p-[10px] bg-[#fa1900] text-slate-100 text-[20px] hover:rounded-tl-lg hover:rounded-br-lg" href="#contact">Get Quoted</a>
+      <a class="mt-[30px] p-[10px] bg-[#fa1900] text-slate-100 text-[20px] hover:rounded-tl-lg hover:rounded-br-lg"
+        href="#contact">Get Quoted</a>
     </div>
   </header>
 
   <!-- About Section -->
   <section id="about" class="bg-about bg-cover bg-no-repeat flex  flex-col items-center justify-center">
-      <h1 class="pt-24 font-bold text-[#800000] text-[25px] uppercase">
-        About Us
-      </h1>
-      <div class="flex flex-col items-center justify-center lg:w-[600px] md:w-[600px] bg-white/85 p-10 my-10 mx-10 rounded-md shadow-[0px_1px_6px_0px_#fed1cc] ">
-        <div>
-          <img src="./img/logo.png" class="w-[200px] h-[200px]">
-        </div>
-        <div>
-          <article class="w-fit p-1 dark:text-gray-600 text-[14px]">
-            A general contractor offering glass and aluminum services, The 3R's Glass
-            and Aluminum Installation Services was founded in 2016 and specializes in
-            sliding windows, sliding doors, fixed windows, awning windows, casement
-            windows, swing doors, f rameless doors, cabinets, mirrors, and other internal
-            and external glass and aluminum works . We manage a variety of industrial
-            and commercial projects in the Metro Manila region and surrounding areas.
-            We have more than 30 years of experience in this sector.
-            Our business is a leader in offering value-added glass and aluminum
-            fabricator services to our clients by establishing a strong relationship with
-            them throughout the construction process . By exceeding their expectations
-            and gaining their trust by our excellent performance, we hope to establish
-            enduring connections with our customers .
-          </article>
-        </div> 
+    <h1 class="pt-24 font-bold text-[#800000] text-[25px] uppercase">
+      About Us
+    </h1>
+    <div
+      class="flex flex-col items-center justify-center lg:w-[600px] md:w-[600px] bg-white/85 p-10 my-10 mx-10 rounded-md shadow-[0px_1px_6px_0px_#fed1cc] ">
+      <div>
+        <img src="./img/logo.png" class="w-[200px] h-[200px]">
       </div>
-      <div class="flex flex-wrap justify-center text-center my-[40px]">
-        <div class="w-[390px] h-[300px] mx-[20px] mt-[40px] bg-[#fa1900] p-4  rounded-md shadow-[26px_-25px_9px_-7px_#ff5f4d]">
-          <h1 class="text-center font-bold text-[20px] text-white">Mission</h1>
-          <p class="text-white  mt-5 leading">
-            We will add value for our customers by identifying their needs and providing cost-effective solutions with excellent and efficient service. We are committed to continuous improvement, ensuring the delivery of quality products and consistent conformance to our customers' expectations.
-          </p>
-        </div>
-        <div class="w-[390px] h-[300px] mx-[20px] mt-[40px] bg-[#fa1900] p-4  rounded-md shadow-[26px_-25px_9px_-7px_#ff5f4d]">
-          <h1 class="text-center font-bold text-[20px] text-white">Vision</h1>
-          <p class="text-white  mt-5 leading">
-            We aim to be recognized as a customer-focused and service-oriented company, dedicated to meeting our customers' expectations. They will view us as a total systems solutions provider. We will become the preferred channel for our suppliers, offering cost-effective and efficient solutions in delivering their products, services, and solutions.
-          </p>
-        </div>
-        <div class="w-[390px] h-[300px] mx-[20px] mt-[40px] bg-[#fa1900] p-4  rounded-md shadow-[26px_-25px_9px_-7px_#ff5f4d]">
-          <h1 class="text-center font-bold text-[20px] text-white">Aim</h1>
-          <p class="text-white  mt-5 leading">
-            We will add value for our customers by identifying their needs and providing cost-effective solutions with excellent and efficient service. We are committed to continuous improvement, ensuring the delivery of quality products and consistent conformance to our customers' expectations.
-          </p>
-        </div>
+      <div>
+        <article class="w-fit p-1 dark:text-gray-600 text-[14px]">
+          A general contractor offering glass and aluminum services, The 3R's Glass
+          and Aluminum Installation Services was founded in 2016 and specializes in
+          sliding windows, sliding doors, fixed windows, awning windows, casement
+          windows, swing doors, f rameless doors, cabinets, mirrors, and other internal
+          and external glass and aluminum works . We manage a variety of industrial
+          and commercial projects in the Metro Manila region and surrounding areas.
+          We have more than 30 years of experience in this sector.
+          Our business is a leader in offering value-added glass and aluminum
+          fabricator services to our clients by establishing a strong relationship with
+          them throughout the construction process . By exceeding their expectations
+          and gaining their trust by our excellent performance, we hope to establish
+          enduring connections with our customers .
+        </article>
       </div>
+    </div>
+    <div class="flex flex-wrap justify-center text-center my-[40px]">
+      <div
+        class="w-[390px] h-[300px] mx-[20px] mt-[40px] bg-[#fa1900] p-4  rounded-md shadow-[26px_-25px_9px_-7px_#ff5f4d]">
+        <h1 class="text-center font-bold text-[20px] text-white">Mission</h1>
+        <p class="text-white  mt-5 leading">
+          We will add value for our customers by identifying their needs and providing cost-effective solutions with
+          excellent and efficient service. We are committed to continuous improvement, ensuring the delivery of quality
+          products and consistent conformance to our customers' expectations.
+        </p>
+      </div>
+      <div
+        class="w-[390px] h-[300px] mx-[20px] mt-[40px] bg-[#fa1900] p-4  rounded-md shadow-[26px_-25px_9px_-7px_#ff5f4d]">
+        <h1 class="text-center font-bold text-[20px] text-white">Vision</h1>
+        <p class="text-white  mt-5 leading">
+          We aim to be recognized as a customer-focused and service-oriented company, dedicated to meeting our
+          customers' expectations. They will view us as a total systems solutions provider. We will become the preferred
+          channel for our suppliers, offering cost-effective and efficient solutions in delivering their products,
+          services, and solutions.
+        </p>
+      </div>
+      <div
+        class="w-[390px] h-[300px] mx-[20px] mt-[40px] bg-[#fa1900] p-4  rounded-md shadow-[26px_-25px_9px_-7px_#ff5f4d]">
+        <h1 class="text-center font-bold text-[20px] text-white">Aim</h1>
+        <p class="text-white  mt-5 leading">
+          We will add value for our customers by identifying their needs and providing cost-effective solutions with
+          excellent and efficient service. We are committed to continuous improvement, ensuring the delivery of quality
+          products and consistent conformance to our customers' expectations.
+        </p>
+      </div>
+    </div>
   </section>
 
   <!-- About Services -->
-  <section id="serve" class="flex flex-col justify-start items-center bg-white" >
-      <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
-        Explore Our Services
-      </h1>
-      <div class="shadow-[0px_1px_6px_0px_#fed1cc] bg-gray-200/40 w-[420px] 2xl:w-[1300px] xl:w-[1200px] lg:w-[900px] md:w-[600px]  mx-8 roundedpy-[20px] p-[25px] mt-[40px] mb-[100px]">
-        <h3 class="px-[15px] lg:text-start md:text-start text-wrap text-[21px] dark:text-gray-600">We take pride in the quality of our work and the reliability of our service. We specialize in the following glass and aluminum supply, customization and installation:</h3>
-        <div class="flex items-center xl:justify-around flex-wrap mt-5 lg:mt-10 dark:text-gray-600">
-          <ul class = "lg:pl-[20px] text-[20px] px-[15px]">
-            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Sliding Window</li>
-            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Sliding Door</li>
-            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Screen Door and Window </li>
-            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Frameless Door</li>
-            <li class="leading-loose flex hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pt-[14px] pr-[7px]"></i>Coated Aluminum for Window and Door Works</li>
-          </ul>
-          <ul class = "lg:pl-[20px] text-[20px] px-[15px]">
-            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Awning Window</li>
-            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Mirror / Glass</li>
-            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Seemless Glass Works</li>
-            <li class="leading-loose flex hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pt-[14px] pr-[7px]"></i>Accesories for Glass and Aluminum Supplies</li>
-            <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Patch Fitting</li>
-          </ul>
-        </div>
+  <section id="serve" class="flex flex-col justify-start items-center bg-white">
+    <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
+      Explore Our Services
+    </h1>
+    <div
+      class="shadow-[0px_1px_6px_0px_#fed1cc] bg-gray-200/40 w-[420px] 2xl:w-[1300px] xl:w-[1200px] lg:w-[900px] md:w-[600px]  mx-8 roundedpy-[20px] p-[25px] mt-[40px] mb-[100px]">
+      <h3 class="px-[15px] lg:text-start md:text-start text-wrap text-[21px] dark:text-gray-600">We take pride in the
+        quality of our work and the reliability of our service. We specialize in the following glass and aluminum
+        supply, customization and installation:</h3>
+      <div class="flex items-center xl:justify-around flex-wrap mt-5 lg:mt-10 dark:text-gray-600">
+        <ul class="lg:pl-[20px] text-[20px] px-[15px]">
+          <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i
+              class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Sliding Window</li>
+          <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i
+              class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Sliding Door</li>
+          <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i
+              class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Screen Door and Window </li>
+          <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i
+              class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Frameless Door</li>
+          <li class="leading-loose flex hover:text-[#ff0038] cursor-pointer"><i
+              class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pt-[14px] pr-[7px]"></i>Coated Aluminum for
+            Window and Door Works</li>
+        </ul>
+        <ul class="lg:pl-[20px] text-[20px] px-[15px]">
+          <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i
+              class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Awning Window</li>
+          <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i
+              class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Mirror / Glass</li>
+          <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i
+              class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Seemless Glass Works</li>
+          <li class="leading-loose flex hover:text-[#ff0038] cursor-pointer"><i
+              class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pt-[14px] pr-[7px]"></i>Accesories for Glass
+            and Aluminum Supplies</li>
+          <li class="leading-loose flex items-center hover:text-[#ff0038] cursor-pointer"><i
+              class="fa-solid fa-greater-than text-[#ff0038] text-[12px] pr-[7px]"></i>Patch Fitting</li>
+        </ul>
       </div>
+    </div>
   </section>
 
   <!-- Project Section -->
@@ -144,29 +184,40 @@
     </h1>
     <div class="flex justify-center p-0 flex-wrap">
       <div class="rounded-xl overflow-hidden mx-[15px] mt-[20px] relative group shadow-[0px_1px_6px_-3px_#fa1900]">
-        <img src="./img/p-2.jpg" class="h-[400px] w-[300px] transition-transform duration-300 group-hover:scale-110 z-10">
-        <div class="absolute inset-0 bg-red-500/35 flex flex-col items-center pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+        <img src="./img/p-2.jpg"
+          class="h-[400px] w-[300px] transition-transform duration-300 group-hover:scale-110 z-10">
+        <div
+          class="absolute inset-0 bg-red-500/35 flex flex-col items-center pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <h1 class="text-slate-100 font-bold opacity-100  text-[25px] animate-bounce z-50">Sliding Door</h1>
-          <a href="s_door.html" class="justify-center"><button class="rounded-md text-[4px] px-[20px] py-[2px] mb-[12px] bg-[#ff0038] text-white font-medium">View</button></a>
+          <a href="s_door.html" class="justify-center"><button
+              class="rounded-md text-[4px] px-[20px] py-[2px] mb-[12px] bg-[#ff0038] text-white font-medium">View</button></a>
         </div>
       </div>
       <div class="rounded-xl overflow-hidden mx-[25px] mt-[20px] relative group shadow-[0px_1px_6px_-3px_#fa1900]">
-        <img src="./img/p-3.jpg" class="h-[400px] w-[300px] transition-transform duration-300 group-hover:scale-110 z-10">
-        <div class="absolute inset-0 bg-red-500/35 flex flex-col items-center pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+        <img src="./img/p-3.jpg"
+          class="h-[400px] w-[300px] transition-transform duration-300 group-hover:scale-110 z-10">
+        <div
+          class="absolute inset-0 bg-red-500/35 flex flex-col items-center pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <h1 class="text-slate-100 font-bold opacity-100  text-[25px] animate-bounce z-50">Sliding Window</h1>
-          <a href="s_window.html" class="justify-center"><button class="rounded-md text-[4px] px-[20px] py-[2px] mb-[12px] bg-[#ff0038] text-white font-medium">View</button></a>
+          <a href="s_window.html" class="justify-center"><button
+              class="rounded-md text-[4px] px-[20px] py-[2px] mb-[12px] bg-[#ff0038] text-white font-medium">View</button></a>
         </div>
       </div>
       <div class="rounded-xl overflow-hidden mx-[15px] mt-[20px] relative group shadow-[0px_1px_6px_-3px_#fa1900]">
-        <img src="./img/p-4.jpg" class="h-[400px] w-[300px] transition-transform duration-300 group-hover:scale-110 z-10">
-        <div class="absolute inset-0 bg-red-500/35 flex flex-col items-center pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+        <img src="./img/p-4.jpg"
+          class="h-[400px] w-[300px] transition-transform duration-300 group-hover:scale-110 z-10">
+        <div
+          class="absolute inset-0 bg-red-500/35 flex flex-col items-center pt-[330px] justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
           <h1 class="text-slate-100 font-bold opacity-100  text-[25px] animate-bounce z-50">Awning Window</h1>
-          <a href="a_window.html" class="justify-center"><button class="rounded-md text-[4px] px-[20px] py-[2px] mb-[12px] bg-[#ff0038] text-white font-medium">View</button></a>
+          <a href="a_window.html" class="justify-center"><button
+              class="rounded-md text-[4px] px-[20px] py-[2px] mb-[12px] bg-[#ff0038] text-white font-medium">View</button></a>
         </div>
       </div>
     </div>
     <div class="mt-[30px] flex items-center justify-center">
-      <a href="project.html" rel="noopener noreferrer" class="px-[10px] py-[5px] bg-[#fa1900] text-slate-100 text-[18px] hover:shadow-2xl shadow-[#000] hover:rounded-tl-lg hover:rounded-br-lg mb-[40px]">See More</a>
+      <a href="project.html" rel="noopener noreferrer"
+        class="px-[10px] py-[5px] bg-[#fa1900] text-slate-100 text-[18px] hover:shadow-2xl shadow-[#000] hover:rounded-tl-lg hover:rounded-br-lg mb-[40px]">See
+        More</a>
     </div>
   </section>
 
@@ -174,44 +225,49 @@
   <section id="contact" class=" bg-white">
     <h1 class="pt-24 font-bold text-[#800000] text-center text-[25px] uppercase">
       Get in touch
-      </h1>
-      <p class="dark:text-gray-600 text-center pt-[10px] px-[50px]">For aluminum quote prices, please reach out using the contact form below. We’ll respond promptly with a tailored quote. Thank you!</p>
+    </h1>
+    <p class="dark:text-gray-600 text-center pt-[10px] px-[50px]">For aluminum quote prices, please reach out using the
+      contact form below. We’ll respond promptly with a tailored quote. Thank you!</p>
     <div class="flex flex-wrap justify-center gap-[40px] mt-[20px]">
       <div class="flex justify-center p-0">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7728.93610561487!2d120.99211896359897!3d14.400161004894716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d14a817e7fed%3A0x28113ce4e3c09645!2sThree%20R&#39;s%20Glass%20and%20Aluminum%20Installation%20Services!5e0!3m2!1sen!2sph!4v1729131612048!5m2!1sen!2sph" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="lg:w-[500px] rounded-md"></iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7728.93610561487!2d120.99211896359897!3d14.400161004894716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397d14a817e7fed%3A0x28113ce4e3c09645!2sThree%20R&#39;s%20Glass%20and%20Aluminum%20Installation%20Services!5e0!3m2!1sen!2sph!4v1729131612048!5m2!1sen!2sph"
+          width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" class="lg:w-[500px] rounded-md"></iframe>
       </div>
       <div class="px-8 py-5 border shadow-[0px_0px_6px_1px_rgba(0,_0,_0,_0.1)] rounded max-w[550px] min-w-[350px]">
-        <form action="#" method="POST" class="space-y-4">
+        <form action="#" onsubmit="return sendMessage();" class="space-y-4">
           <!-- Name -->
-           <div class="grid lg:grid-cols-2 lg:space-x-3">
+          <div class="grid lg:grid-cols-2 lg:space-x-3">
             <div>
               <label for="name" class="block text-sm font-medium text-gray-700">First Name</label>
-              <input type="text" name="name" id="name" required
-              placeholder="Enter your name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]">
+              <input type="text" name="name" id="fname" required placeholder="Enter your name"
+                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]">
             </div>
             <div class="mt-[16px] lg:mt-0">
               <label for="lastname" class="block text-sm font-medium text-gray-700">Last Name</label>
-              <input type="text" name="lastname" id="lastname" required
-              placeholder="Enter your name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]">
+              <input type="text" name="lastname" id="lname" required placeholder="Enter your name"
+                class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]">
             </div>
-           </div>
+          </div>
           <!-- Email -->
           <div>
             <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-            <input type="email" name="email" id="email" required
-            placeholder="Enter your email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]">
+            <input type="email" name="email" id="email" required placeholder="Enter your email"
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]">
           </div>
-    
+
           <!-- Message -->
           <div>
             <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-            <textarea name="message" id="message" rows="5" required
-            placeholder="Enter your message" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]"></textarea>
+            <textarea name="message" id="message" rows="5" required placeholder="Enter your message"
+              class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#fa1900] focus:border-[#fa1900]"></textarea>
           </div>
-    
+
           <!-- Submit Button -->
           <div class="text-center">
-            <button type="submit" class="px-6 py-2 bg-[#fa1900] text-white rounded-lg hover:bg-red-600 focus:ring-4 focus:ring-[#fa1900]/50 transition ease-in-out duration-300">
+            <button type="submit"
+              class="px-6 py-2 bg-[#fa1900] text-white rounded-lg hover:bg-red-600 focus:ring-4 focus:ring-[#fa1900]/50 transition ease-in-out duration-300">
               Send Message
             </button>
           </div>
@@ -234,7 +290,8 @@
         </div>
         <div class="p-3 dark:text-gray-600">
           <h1 class="text-[#fa1900] font-bold leading-tight">Address</h1>
-          <p class="not-italic font-light text-[13px] pl-[20px]">Queen's Row Area S, B15 L 15, Queen's Ave, Bacoor, 4102 Cavite</p>
+          <p class="not-italic font-light text-[13px] pl-[20px]">Queen's Row Area S, B15 L 15, Queen's Ave, Bacoor, 4102
+            Cavite</p>
         </div>
       </div>
       <div class="w-[350px] rounded-xl shadow-[0px_0px_6px_1px_rgba(0,_0,_0,_0.1)] p-0">
@@ -249,19 +306,22 @@
     </div>
     <div class="flex items-center justify-center space-x-5 my-[40px]">
       <div class="flex flex-col justify-center items-center gap-2 hover:cursor-pointer">
-        <a href="https://www.facebook.com/profile.php?id=100071350239993" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook text-[35px] mx-[20px] text-[#fa1900]"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100071350239993" target="_blank" rel="noopener noreferrer"><i
+            class="fa-brands fa-facebook text-[35px] mx-[20px] text-[#fa1900]"></i></a>
         <h3 class="dark:text-gray-600 text-[12px]">Facebook</h3>
       </div>
 
-      <div class="flex flex-col justify-center items-center gap-2 hover:cursor-pointer"> 
-        <a href="https://msng.link/o?639561649700=vi" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-viber text-[35px] mx-[20px] text-[#fa1900]"></i></a>
+      <div class="flex flex-col justify-center items-center gap-2 hover:cursor-pointer">
+        <a href="https://msng.link/o?639561649700=vi" target="_blank" rel="noopener noreferrer"><i
+            class="fa-brands fa-viber text-[35px] mx-[20px] text-[#fa1900]"></i></a>
         <h3 class="dark:text-gray-600 text-[12px]">Viber</h3>
       </div>
     </div>
   </section>
 
   <footer class="flex flex-col items-center text-[16px] text-white p-4 bg-[#fa1900] justify-center">
-    <p class="">@2024 3R'S Glass Aluminum Services and Installation | Website by <span><a href="http://" target="_blank" rel="noopener noreferrer">Yoh</a></span></p>
+    <p class="">@2024 3R'S Glass Aluminum Services and Installation | Website by <span><a href="http://" target="_blank"
+          rel="noopener noreferrer">Yoh</a></span></p>
   </footer>
 
   <script>
@@ -269,12 +329,12 @@
     function closeMenu() {
       document.getElementById('menu-toggle').checked = false;
     }
-    
+
 
     const navLinks = document.querySelectorAll('.nav-link');
 
     navLinks.forEach(link => {
-      link.addEventListener('click', function() {
+      link.addEventListener('click', function () {
         navLinks.forEach(link => link.querySelector('li').classList.remove('text-[#fa1900]', 'underline', 'underline-offset-8'));
         this.querySelector('li').classList.add('text-[#fa1900]', 'underline', 'underline-offset-8');
       });
@@ -282,7 +342,7 @@
 
     function updateFooterYear() {
       const currentYear = new Date().getFullYear();
-      const footerElement = document.querySelector("footer p"); 
+      const footerElement = document.querySelector("footer p");
       if (footerElement) {
         footerElement.innerHTML = `@${currentYear} 3R's Glass Aluminum Services and Installation | Website by <span><a href="https://rommelliad.netlify.app/" rel="noopener noreferrer" class="underline">YOH</a></span>`;
       }
@@ -292,5 +352,9 @@
     document.addEventListener("DOMContentLoaded", updateFooterYear);
 
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="index.js"></script>
+
 </body>
+
 </html>
